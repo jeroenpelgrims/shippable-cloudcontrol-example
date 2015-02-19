@@ -5,7 +5,11 @@
   "main": "server.js",
   "author": "Jeroen Pelgrims <jeroen.pelgrims@gmail.com> (http://jeroenpelgrims.be)",
   "license": "ISC",
+  "scripts": {
+    "test": "mocha"
+  },
   "dependencies": {
-    "express": "^4.11.2"
+    "express": "^4.11.2",
+    "request": "^2.53.0"
   }
 }
