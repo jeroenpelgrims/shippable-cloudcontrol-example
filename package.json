@@ -1,0 +1,11 @@
+{
+  "name": "shippable-cloudcontrol-example",
+  "version": "1.0.0",
+  "description": "An example how to link Shippable and CloudControl",
+  "main": "server.js",
+  "author": "Jeroen Pelgrims <jeroen.pelgrims@gmail.com> (http://jeroenpelgrims.be)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.11.2"
+  }
+}
