@@ -5,6 +5,10 @@
   "main": "server.js",
   "author": "Jeroen Pelgrims <jeroen.pelgrims@gmail.com> (http://jeroenpelgrims.be)",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/resurge/shippable-cloudcontrol-example"
+  },
   "scripts": {
     "test": "mocha"
   },
