@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - 0.10.31
+env:
+  global:
+    - OPENSHIFT_REPO=ssh://54d92357fcf9335c0a0000af@whereisbeta-jeroenpelgrims.rhcloud.com/~/git/whereisbeta.git/
+before_install:
+  - git remote -v | grep ^openshift || git remote add openshift $OPENSHIFT_REPO
+script:
+  - grunt build:dev
+after_success:
+  - git push -f openshift $BRANCH:master
