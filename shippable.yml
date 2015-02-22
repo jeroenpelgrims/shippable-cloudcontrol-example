@@ -8,5 +8,5 @@ before_script:
 script:
   - npm test
 after_success:
-  - git push cctrl mydeployment
+  - git push cctrl master
   - cctrlapp shippablecloudcontrolexample/default deploy
