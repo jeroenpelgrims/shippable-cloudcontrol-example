@@ -1,5 +1,10 @@
 language: node_js
 node_js:
   - 0.10.31
+before_script:
+  - sudo pip install -U cctrl
 script:
   - npm test
+after_success:
+  - cctrlapp shippablecloudcontrolexample/default push
+  - cctrlapp shippablecloudcontrolexample/default deploy
