@@ -3,8 +3,10 @@ node_js:
   - 0.10.31
 before_script:
   - sudo pip install -U cctrl
+  #Auto accept host keys for cloudcontrolled.com
+  #Otherwise shippable hangs at the dialog "Are you sure you want to continue connecting (yes/no)?"
+  - ssh-keyscan -H cloudcontrolled.com >> ~/.ssh/known_hosts
 script:
   - npm test
 after_success:
-  - cctrlapp shippablecloudcontrolexample/default push
-  - cctrlapp shippablecloudcontrolexample/default deploy
+  - cctrlapp shippablecloudcontrolexample/default push --deploy
