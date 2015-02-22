@@ -3,7 +3,7 @@ node_js:
   - 0.10.31
 before_script:
   - ssh-keyscan -H cloudcontrolled.com >> ~/.ssh/known_hosts
-  - git add remote cctrl ssh://shippablecloudcontrolexample@cloudcontrolled.com/repository.git
+  - git remote add cctrl ssh://shippablecloudcontrolexample@cloudcontrolled.com/repository.git
   - sudo pip install -U cctrl
 script:
   - npm test
