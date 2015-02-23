@@ -18,7 +18,7 @@ describe('Test responses', function() {
     it("should respond with a h1", function(done){
       var url = 'http://localhost:' + testPort;
       request(url, function(err, res, body) {
-        assert(body === '<h1>Server is working! (1)</h1>');
+        assert(body === '<h1>Server is working! (2)</h1>');
         done();
       }); 
     }); 
